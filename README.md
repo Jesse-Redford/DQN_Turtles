@@ -15,7 +15,7 @@ This repository includes executable programs and tutorials for teaching turtles 
 
 ###### Bounded Plane - Turtles are restricted to a bounded rectangular plane 
  
-###### Klein bottle - Edges of plane are "glued together", turtle which passes through one side of the plane appears will reappear on the opposing side.
+###### **Klein bottle** - Edges of plane are "glued together", turtle which passes through one side of the plane appears will reappear on the opposing side.
 
 ###### Real projective plane - Add description
 
