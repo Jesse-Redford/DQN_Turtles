@@ -5,12 +5,19 @@ This repository includes executable programs and tutorials for teaching turtles 
 
 Before procceding please install packages listed under system requirments. Under (Executables and Verision Descriptions) users can select different executable versions of Deep_Turtle to run on their local machine, each verison consitist of different agent(s) configurations, game conditions, and enviroments. Discriptions of topoloical enviroments in which your turtle agents can train in are listed under Turtle Enviroments.
 
+
+## Learning the Not It Policy 
+In the first turtle tag seniro we train a blue turtle agent to avoid being caught by two red turtles.
+The agents state is defined as [xb,yb,x1r,y1r,x2r,y2r] where xb,yb is the blue turtle coordinates, and x1r,yr1,x2r,yr2, are the red turtle positions. The blue turtle recieves a reward of +1 for each timestep it is not caught by another red turtle and a reward of -100 for being caught. The players get randomly positioned in the enviroment at the start of training and each time the blue turtle is caught. A penalty of -2 is assigned to the blue turtle reward if it attempts to move outside the Bounded_Plane. The Blue turtle actions consist of a selection of a relative heading being either N, NE, E, SE, S , SW, W, NW in combination with to speed options 10 or 20. The red turtles move at a speed of 10 and are programed to always have a relative heading pointing towards the blue turtle. 
+
+
 ## System Requirments 
 - pip install turtles
 - pip install Keras
 - pip install numpy
 - pip install matplotlib
 - pip install palettable
+
 
 ## Turtle Enviroments 
 
