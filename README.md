@@ -10,35 +10,43 @@ This repository includes executable programs and tutorials for teaching turtles 
 - pip install matplotlib
 - pip install palettable
 
-
 ## Turtle Enviroments 
 
 ###### Bounded Plane - Turtles are restricted to a bounded rectangular plane 
- 
-###### **Klein bottle** - Edges of plane are "glued together", turtle which passes through one side of the plane appears will reappear on the opposing side.
-
+###### Klein bottle - Edges of plane are "glued together", turtle which passes through one side of the plane appears will reappear on the opposing side.
 ###### Real projective plane - Add description
-
 ###### Boy's surface - Add description
 
 
 ## Executables and Descriptions
 
-###### Deep_Turtle_V1.py - Trains a single blue turtle agent in Bounded Plane two avoid being tagged by 2 red turtles 
-
-###### Deep_Turtle_V2.py - Trains a single blue turtle agent in Klein bottle two avoid being tagged by 2 red turtles 
-
 ###### Adversarial_Turtle_Tag.py - Two turtle agents compete aginst one another in a game of tag as they simulatniously learn how to play the game 
 
+###### Deep_Not_It_Turtle_Bounded_Plane.py - Trains a single blue turtle agent in Bounded Plane two avoid being tagged by 2 red turtles 
+###### Deep_It_Turtle_Bounded_Plane_V1.py - Trains a red/black turtle agent with a red turtle teammate in Bounded Plane to catch a trained blue turtle
+###### Deep_It_Turtle_Bounded_Plane_V2.py -  Trains a red/black turtle agent with a red turtle teammate in Bounded Plane to catch a trained blue turtle w/o awarness of teamates location
+
+###### Deep_Not_It_Turtle_Klein_Bottle.py - Trains a single blue turtle agent in Klein bottle two avoid being tagged by 2 red turtles 
 
 
 
+## Tutorials for Building Custom Executables
 
-# Tutorials for Building Custom Executables
 
-- Version I
+actions = list(itertools.product(range(0,271,45),range(10,21,10))) # (headings,speeds)
 
-- Version II
+nodes_layer1 = 30
+nodes_layer2 = 15
 
-- Version III
+af_layer1 = 'relu'
+af_layer2 = 'relu'
+
+enviroment_dimensions = 500 x 500
+
+game_topology = 'Bounded Plane'
+
+Train = True or False
+
+
+def Deep_Turtles(
 
