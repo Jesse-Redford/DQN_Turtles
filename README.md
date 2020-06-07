@@ -11,6 +11,15 @@ In the first turtle tag seniro we train a blue turtle agent to avoid being caugh
 The agents state is defined as [xb,yb,x1r,y1r,x2r,y2r] where xb,yb is the blue turtle coordinates, and x1r,yr1,x2r,yr2, are the red turtle positions. The blue turtle recieves a reward of +1 for each timestep it is not caught by another red turtle and a reward of -100 for being caught. The players get randomly positioned in the enviroment at the start of training and each time the blue turtle is caught. A penalty of -2 is assigned to the blue turtle reward if it attempts to move outside the Bounded_Plane. The Blue turtle actions consist of a selection of a relative heading being either N, NE, E, SE, S , SW, W, NW in combination with to speed options 10 or 20. The red turtles move at a speed of 10 and are programed to always have a relative heading pointing towards the blue turtle. 
 
 
+## Hints for better preformance
+Applying a priority experience replay drastically enhances training efficency. By priority I mean having the model fit to experiences where it losses the game or attempts to run out of the playing area. For example we add the condition below to our experience replay function.
+
+    if reward != 1:  
+            for j in range(200):     
+                Q_network.train_on_batch(state, updated_Qs)
+        Target_network = Q_network
+
+
 ## System Requirments 
 - pip install turtles
 - pip install Keras
