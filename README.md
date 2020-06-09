@@ -39,7 +39,8 @@ The image below represent 500 guided training iterations, you can notice the use
 
 
 
-![SVD GUI Example](https://github.com/Jesse-Redford/Adpative-SVD/blob/master/SVD_GUI.PNG?raw=true)
+![Policy Guidance For Accelerated Training](https://github.com/Jesse-Redford/Deep_Turtles/blob/master/G_Policy.gif?raw=true)
+
 
 
 
