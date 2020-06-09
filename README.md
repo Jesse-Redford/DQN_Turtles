@@ -34,7 +34,7 @@ However, for experince replay we have the latter implentation, sampling from min
           Discount_Factor = 0.9
 
 
-The image below represent 500 guided training iterations, you can notice the user input by the delay in the video feed, 
+The image below represent 1000 guided training iterations, you can notice the user input by the delay in the video feed, 
 32x16 tanh network with lr.001 and Adadelta optimizer, clipnorm=1
 
 
