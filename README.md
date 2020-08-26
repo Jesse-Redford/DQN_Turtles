@@ -10,11 +10,11 @@ Before procceding please install packages listed under system requirments. Under
 To install all required libraries, download the repo to your local machine, open cmd and navigate to folder, then enter
 
     pip install -r requirements.txt
-     pip install turtles
-     pip install Keras
-     pip install numpy
-     pip install matplotlib
-     pip install palettable
+    pip install turtles
+    pip install Keras
+    pip install numpy
+    pip install matplotlib
+    pip install palettable
 
 
 ## Learning the Not It Policy 
