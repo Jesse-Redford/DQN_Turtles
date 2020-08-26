@@ -1,4 +1,4 @@
-# Deep Turtles
+# DeepTurtles
 This repository includes executable programs and tutorials for teaching turtles how to play variations of "tag" with Deep Q-Networks, users can modify network configuration, hyperparameters, in addition to the game enviroment to anaylize the preformance of your turtle agent(s) in realtime. The repository also includes a series of visualization tools to allow the user to examine how the weights of an agent's Deep Q-Network change during the training process. These visualization tools aim to provide a more intutative assessment of nerual-networks, help identify training efficency, optimal learning parameters, reward functions, state-action space defintions, model configurations, ect. 
 
  The intent of this project is study MDPs, state-action space defintions, sampling techniques, multi-agent, and adversariale approaches to training Deep Q-networks. Our research aims to highlight and leverage the presense of behaviroal and enviroment symetery to reduce agent training time and modify agent policies with direct matrix operations.
